@@ -414,6 +414,79 @@
             margin-top: 50px;
         }
         
+        /* Social Media Section */
+        .social-media {
+            padding: 80px 0;
+            background: linear-gradient(to bottom, #f0f9ff, #e6f4ff);
+            text-align: center;
+        }
+        
+        .social-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .social-feed {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .social-card {
+            width: 280px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        .social-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .social-header {
+            padding: 20px;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .social-header i {
+            font-size: 1.5rem;
+        }
+        
+        .social-content {
+            padding: 20px;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .social-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            margin-top: 15px;
+        }
+        
+        .social-btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
         /* Footer */
         footer {
             background: var(--primary);
@@ -475,6 +548,18 @@
             transform: translateY(-5px);
         }
         
+        .email-link {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+        }
+        
+        .email-link:hover {
+            color: var(--secondary);
+            transform: translateY(-2px);
+        }
+        
         .copyright {
             text-align: center;
             padding-top: 30px;
@@ -529,6 +614,11 @@
             .btn-outline {
                 margin-left: 0;
             }
+            
+            .social-feed {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         
         @media (max-width: 480px) {
@@ -560,12 +650,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">La Mia Storia</a></li>
-                    <li><a href="#">Missione</a></li>
-                    <li><a href="#">Editoriali</a></li>
-                    <li><a href="#">Esperienze</a></li>
-                    <li><a href="#">Contatti</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">La Mia Storia</a></li>
+                    <li><a href="#mission">Missione</a></li>
+                    <li><a href="#editorials">Editoriali</a></li>
+                    <li><a href="#social">Social</a></li>
+                    <li><a href="#contacts">Contatti</a></li>
                 </ul>
                 <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
@@ -575,36 +665,35 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
                 <h2>Ridisegnare la Medicina attraverso l'Esperienza della Disabilità</h2>
                 <p>Un viaggio nella medicina visto da una prospettiva unica: quella di una studentessa di medicina con disabilità che sogna un sistema sanitario più inclusivo e accessibile.</p>
-                <a href="#" class="btn">Scopri la Mia Storia</a>
-                <a href="#" class="btn btn-outline">Esplora i Contenuti</a>
+                <a href="#about" class="btn">Scopri la Mia Storia</a>
+                <a href="#editorials" class="btn btn-outline">Esplora i Contenuti</a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">    
             <div class="section-title">
-                <h2>La Persona Dietro il Progetto</h2>
+                <h2>La Persona Dietre il Progetto</h2>
                 <p>Conoscimi meglio e scopri cosa mi ha spinto a creare Atypical Med</p>
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="images/profile.jpg" alt="Studentessa di Medicina con disabilità">
+                    <img src="/images/profile.jpg" alt="Studentessa di Medicina con disabilità">
                 </div>
                 <div class="about-text">
-                    <h3>Ciao, sono una studentessa di Medina con una missione</h3>
+                    <h3>Ciao, sono una studentessa di Medicina con una missione</h3>
                     <p>Frequentando Medicina, ho capito quanto il mondo sanitario sia ancora distante dal comprendere davvero cosa significhi vivere con una disabilità. </p>
                     <p>Troppo spesso, questa viene osservata solo attraverso una lente clinica, perdendo di vista la dimensione umana, sociale e quotidiana dell’ esperienza vissuta.</p>
-                    <p>Atypical Med nasce proprio da questa consapevolezza: è un progetto che vuole portare alla luce le voci, le sfide e le storie delle persone con disabilità nel mondo medico. </p>
+                    <p>Atypical Med nasce proprio da questa consapevoleza: è un progetto che vuole portare alla luce le voci, le sfide e le storie delle persone con disabilità nel mondo medico. </p>
                     <p>L’obiettivo è chiaro: abbattere barriere, combattere lo stigma e promuovere una medicina più inclusiva, accessibile e consapevole. </p>
                     <p>Questa è molto più di una pagina: è uno spazio di confronto, testimonianza e attivismo, nato dall’esperienza e rivolto a chi crede che la medicina debba curare, sì, ma anche accogliere e rappresentare.</p> 
-                         </p>
                     <p class="signature">"La diversità è un fatto, l'inclusione è una scelta"</p>
                 </div>
             </div>
@@ -612,7 +701,7 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="mission">
+    <section class="mission" id="mission">
         <div class="container">
             <div class="section-title">
                 <h2>La Nostra Missione</h2>
@@ -661,19 +750,12 @@
                     <h3>Sfide Giornaliere</h3>
                     <p>Raccontare le sfide quotidiane di uno studente di medicina con disabilità per ispirare cambiamenti concreti nella formazione medica.</p>
                 </div>
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Prospettiva delle Persone Disabili</h3>
-                    <p>Portare in primo piano le esperienze vissute, perché nessuno meglio di chi vive la disabilità può guidare il cambiamento.</p>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Editorials Preview -->
-    <section class="editorials">
+    <section class="editorials" id="editorials">
         <div class="container">
             <div class="section-title">
                 <h2>Editoriali & Curiosità</h2>
@@ -681,48 +763,99 @@
             </div>
             <div class="editorial-cards">
                 <div class="editorial-card">
-                    <div class="editorial-img" style="background-image: url('images/hospital.jpeg');"></div>
+                    <div class="editorial-img" style="background-image: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80');"></div>
                     <div class="editorial-content">
                         <h3>L'Accessibilità nei Reparti Ospedalieri</h3>
                         <p>Un'analisi delle barriere architettoniche più comuni e soluzioni pratiche per superarle.</p>
-                        <a href="articles/article1.html" class="editorial-link">Leggi l'articolo</a>
+                        <a href="https://medium.com/" class="editorial-link" target="_blank">Leggi l'articolo</a>
                     </div>
-               
-                
+                </div>
+                <div class="editorial-card">
+                    <div class="editorial-img" style="background-image: url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');"></div>
+                    <div class="editorial-content">
+                        <h3>Disabilità e Formazione Medica</h3>
+                        <p>Come integrare la prospettiva della disabilità nell'insegnamento della medicina.</p>
+                        <a href="https://medium.com/" class="editorial-link" target="_blank">Leggi l'articolo</a>
+                    </div>
+                </div>
+                <div class="editorial-card">
+                    <div class="editorial-img" style="background-image: url('https://images.unsplash.com/photo-1599045118108-bf9954418b76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80');"></div>
+                    <div class="editorial-content">
+                        <h3>Erasmus con Disabilità</h3>
+                        <p>La mia esperienza di studio a Lubiana: sfide e opportunità di un percorso internazionale.</p>
+                        <a href="https://medium.com/" class="editorial-link" target="_blank">Leggi l'articolo</a>
+                    </div>
                 </div>
             </div>
             <div class="center-btn">
-                <a href="#" class="btn">Esplora Tutti gli Editoriali</a>
+                <a href="https://medium.com/" class="btn" target="_blank">Esplora Tutti gli Editoriali</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media" id="social">
+        <div class="container">
+            <div class="section-title">
+                <h2>Seguimi sui Social</h2>
+                <p>Restiamo in contatto attraverso i miei canali social</p>
+            </div>
+            <div class="social-container">
+                <p>Condivido contenuti esclusivi, aggiornamenti sul progetto e riflessioni quotidiane sulla medicina inclusiva. Unisciti alla community!</p>
+                
+                <div class="social-feed">
+                    <div class="social-card">
+                        <div class="social-header">
+                            <i class="fab fa-instagram"></i>
+                            <h3>Instagram</h3>
+                        </div>
+                        <div class="social-content">
+                            <p>Storie, post informativi e momenti quotidiani</p>
+                        </div>
+                        <a href="https://www.instagram.com/atypicalmed_/" class="social-btn" target="_blank">Seguimi</a>
+                    </div>
+                    
+                    <div class="social-card">
+                        <div class="social-header">
+                            <i class="fab fa-tiktok"></i>
+                            <h3>TikTok</h3>
+                        </div>
+                        <div class="social-content">
+                            <p>Video brevi e contenuti divulgativi</p>
+                        </div>
+                        <a href="#" class="social-btn" target="_blank">Seguimi</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="contacts">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>Atypical Med</h3>
                     <p>Un progetto nato per portare una prospettiva diversa nel mondo della medicina, attraverso gli occhi di una studentessa con disabilità.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/atypicalmed_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
                     <h3>Link Utili</h3>
-                    <p><a href="#" style="color: white; text-decoration: none;">La Mia Storia</a></p>
-                    <p><a href="#" style="color: white; text-decoration: none;">Missione del Progetto</a></p>
-                    <p><a href="#" style="color: white; text-decoration: none;">Editoriali</a></p>
-                    <p><a href="#" style="color: white; text-decoration: none;">Esperienze all'Estero</a></p>
-                    <p><a href="#" style="color: white; text-decoration: none;">Contatti</a></p>
+                    <p><a href="#about" style="color: white; text-decoration: none;">La Mia Storia</a></p>
+                    <p><a href="#mission" style="color: white; text-decoration: none;">Missione del Progetto</a></p>
+                    <p><a href="#editorials" style="color: white; text-decoration: none;">Editoriali</a></p>
+                    <p><a href="#social" style="color: white; text-decoration: none;">Social Media</a></p>
+                    <p><a href="#contacts" style="color: white; text-decoration: none;">Contatti</a></p>
                 </div>
                 <div class="footer-col">
                     <h3>Contatti</h3>
-                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@atypicalmed.it</p>
-                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Università di Medicina, Italia</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> 
+                       <a href="mailto:atypicalmed12@gmail.com" class="email-link">atypicalmed12@gmail.com</a>
+                    </p>
+                    <p>Scrivimi per collaborazioni, domande o per condividere la tua esperienza</p>
                 </div>
             </div>
             <div class="copyright">
@@ -754,9 +887,12 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     </script>
