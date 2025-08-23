@@ -160,6 +160,13 @@
             font-weight: 300;
         }
         
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
         .btn {
             display: inline-block;
             background: var(--accent);
@@ -173,6 +180,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 1rem;
+            flex-shrink: 0;
         }
         
         .btn:hover {
@@ -185,7 +193,6 @@
         .btn-outline {
             background: transparent;
             border: 2px solid white;
-            margin-left: 15px;
         }
         
         .btn-outline:hover {
@@ -605,14 +612,15 @@
                 font-size: 1.1rem;
             }
             
-            .btn {
-                display: block;
-                margin: 10px auto;
-                max-width: 250px;
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
             }
             
-            .btn-outline {
-                margin-left: 0;
+            .btn {
+                margin: 5px 0;
+                width: 250px;
+                text-align: center;
             }
             
             .social-feed {
@@ -670,8 +678,10 @@
             <div class="hero-content">
                 <h2>Ridisegnare la Medicina attraverso l'Esperienza della Disabilità</h2>
                 <p>Un viaggio nella medicina visto da una prospettiva unica: quella di una studentessa di medicina con disabilità che sogna un sistema sanitario più inclusivo e accessibile.</p>
-                <a href="#about" class="btn">Scopri la Mia Storia</a>
-                <a href="#editorials" class="btn btn-outline">Esplora i Contenuti</a>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn">Scopri la Mia Storia</a>
+                    <a href="#editorials" class="btn btn-outline">Esplora i Contenuti</a>
+                </div>
             </div>
         </div>
     </section>
