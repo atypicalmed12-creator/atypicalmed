@@ -94,6 +94,7 @@
         
         nav li {
             margin-left: 30px;
+            position: relative;
         }
         
         nav a {
@@ -128,6 +129,7 @@
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
+            color: var(--primary);
         }
         
         /* Hero Section */
@@ -513,6 +515,7 @@
             margin-bottom: 20px;
             position: relative;
             padding-bottom: 10px;
+            color: white;
         }
         
         .footer-col h3::after {
@@ -575,6 +578,49 @@
             opacity: 0.7;
         }
         
+        /* Menu mobile migliorato */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            padding: 20px 0;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-nav.active {
+            transform: translateY(0);
+        }
+        
+        .mobile-nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        .mobile-nav li {
+            margin: 15px 0;
+        }
+        
+        .mobile-nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 1.2rem;
+            display: block;
+            padding: 10px;
+            transition: var(--transition);
+        }
+        
+        .mobile-nav a:hover {
+            color: var(--primary);
+            background: #f0f7ff;
+        }
+        
         /* Responsive Design */
         @media (max-width: 992px) {
             .hero h2 {
@@ -591,7 +637,7 @@
             
             .about-img {
                 max-width: 500px;
-                margin: 0 auto;
+                margin: 0 auto 30px;
             }
         }
         
@@ -604,34 +650,53 @@
                 display: block;
             }
             
+            .mobile-nav {
+                display: block;
+            }
+            
             .hero h2 {
                 font-size: 2.2rem;
             }
             
             .hero p {
                 font-size: 1.1rem;
+                padding: 0 10px;
             }
             
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
             }
             
             .btn {
-                margin: 5px 0;
                 width: 250px;
                 text-align: center;
+                margin: 0;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
             }
             
             .social-feed {
                 flex-direction: column;
                 align-items: center;
             }
+            
+            .mission-card, .editorial-card {
+                margin: 0 10px;
+            }
         }
         
         @media (max-width: 480px) {
             .hero h2 {
                 font-size: 1.8rem;
+                padding: 0 10px;
+            }
+            
+            .hero p {
+                font-size: 1rem;
             }
             
             .section-title h2 {
@@ -640,6 +705,34 @@
             
             .about-img {
                 max-width: 100%;
+            }
+            
+            .btn {
+                width: 220px;
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .footer-col h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Ottimizzazioni per iOS */
+        @supports (-webkit-touch-callout: none) {
+            .hero {
+                height: -webkit-fill-available;
+                min-height: 100vh;
+            }
+            
+            .btn {
+                padding: 14px 30px;
             }
         }
     </style>
@@ -653,7 +746,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <i class="fas fa-heartbeat"></i>
+                <i class="fas fa-heartbeat" style="font-size: 2rem; color: var(--primary); margin-right: 10px;"></i>
                 <h1>Atypical <span>Med</span></h1>
             </div>
             <nav>
@@ -671,6 +764,18 @@
             </nav>
         </div>
     </header>
+
+    <!-- Menu mobile -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">La Mia Storia</a></li>
+            <li><a href="#mission">Missione</a></li>
+            <li><a href="#editorials">Editoriali</a></li>
+            <li><a href="#social">Social</a></li>
+            <li><a href="#contacts">Contatti</a></li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -695,7 +800,7 @@
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="/images/profile.jpg" alt="Studentessa di Medicina con disabilità">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Studentessa di Medicina con disabilità">
                 </div>
                 <div class="about-text">
                     <h3>Ciao, sono una studentessa di Medicina con una missione</h3>
@@ -703,7 +808,7 @@
                     <p>Troppo spesso, questa viene osservata solo attraverso una lente clinica, perdendo di vista la dimensione umana, sociale e quotidiana dell’ esperienza vissuta.</p>
                     <p>Atypical Med nasce proprio da questa consapevoleza: è un progetto che vuole portare alla luce le voci, le sfide e le storie delle persone con disabilità nel mondo medico. </p>
                     <p>L’obiettivo è chiaro: abbattere barriere, combattere lo stigma e promuovere una medicina più inclusiva, accessibile e consapevole. </p>
-                    <p>Questa è molto più di una pagina: è uno spazio di confronto, testimonianza e attivismo, nato dall’esperienza e rivolto a chi crede che la medicina debba curare, sì, ma anche accogliere e rappresentare.</p> 
+                    <p>Questa è molto più di una pagina: è uno spazio di confronto, testimonianza и attivismo, nato dall’esperienza e rivolto a chi crede che la medicina debba curare, sì, ma anche accogliere e rappresentare.</p> 
                     <p class="signature">"La diversità è un fatto, l'inclusione è una scelta"</p>
                 </div>
             </div>
@@ -875,22 +980,29 @@
     </footer>
 
     <script>
-        // Simple script for mobile menu toggle
+        // Menu mobile toggle
         document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            const nav = document.querySelector('nav ul');
-            if (nav.style.display === 'flex') {
-                nav.style.display = 'none';
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+            
+            // Cambia icona menu
+            const icon = this.querySelector('i');
+            if (mobileNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
             } else {
-                nav.style.display = 'flex';
-                nav.style.flexDirection = 'column';
-                nav.style.position = 'absolute';
-                nav.style.top = '70px';
-                nav.style.left = '0';
-                nav.style.width = '100%';
-                nav.style.backgroundColor = 'white';
-                nav.style.padding = '20px 0';
-                nav.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
             }
+        });
+
+        // Chiudi menu mobile quando si clicca su un link
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobileNav').classList.remove('active');
+                document.querySelector('.mobile-menu-btn i').classList.remove('fa-times');
+                document.querySelector('.mobile-menu-btn i').classList.add('fa-bars');
+            });
         });
 
         // Add smooth scrolling for navigation links
