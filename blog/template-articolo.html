@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NGKMKNR6');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atypical Med | Redesigning Medicine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2a6b97;
+            --secondary: #4cb5ae;
+            --accent: #ff6b6b;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+            --shadow-hover: 0 20px 50px -10px rgba(42, 107, 151, 0.2);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: var(--dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background-color: #f8fbff;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo i {
+            font-size: 2rem; 
+            color: var(--primary); 
+            margin-right: 12px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .logo h1 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+            font-weight: 800;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+        
+        nav li {
+            margin-left: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        /* Language Switcher */
+        .lang-switch {
+            cursor: pointer;
+            border: 2px solid var(--primary);
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.8rem;
+            transition: var(--transition);
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+        .lang-switch:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            /* Improved Gradient */
+            background: linear-gradient(135deg, rgba(42, 107, 151, 0.95) 0%, rgba(76, 181, 174, 0.85) 100%), url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            font-weight: 800;
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 14px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+            border: 2px solid var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: white; /* Changed for better contrast on hero */
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.6);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            box-shadow: none;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 120px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-top: 15px;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        
+        .about-img {
+            flex: 1;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            color: #4a4a4a;
+        }
+        
+        .about-text .signature {
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-top: 30px;
+            font-size: 1.2rem;
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+        }
+        
+        /* Mission Section */
+        .mission {
+            padding: 120px 0;
+            background: linear-gradient(to bottom, #f0f7ff, #e6fdfb);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .mission-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            border-top: 5px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-top: 5px solid var(--secondary);
+        }
+        
+        .mission-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            background: #eef6fb;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .mission-card:hover .mission-icon {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .mission-card h3 {
+            font-size: 1.4rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .mission-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        /* Editorials Preview */
+        .editorials {
+            padding: 120px 0;
+            background: white;
+        }
+        
+        .editorial-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .editorial-card {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            background: white;
+            border: 1px solid #eee;
+        }
+        
+        .editorial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .editorial-img {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .editorial-img::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.5));
+        }
+        
+        .editorial-content {
+            padding: 30px;
+        }
+        
+        .editorial-content h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .editorial-content p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .editorial-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--secondary);
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+        
+        .editorial-link i {
+            margin-left: 8px;
+            transition: var(--transition);
+        }
+        
+        .editorial-link:hover {
+            color: var(--primary);
+        }
+        
+        .editorial-link:hover i {
+            transform: translateX(5px);
+        }
+        
+        .center-btn {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .center-btn .btn {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .center-btn .btn:hover {
+            background: white;
+            color: var(--primary);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a4563; /* Darker shade of primary */
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: white;
+            letter-spacing: 1px;
+        }
+        
+        .footer-col p {
+            margin-bottom: 15px;
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-5px) rotate(10deg);
+        }
+        
+        .email-link {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+        
+        .email-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+        
+        /* Menu mobile migliorato */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 75px;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            z-index: 999;
+            padding: 20px 0;
+            transform: translateY(-150%);
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        
+        .mobile-nav.active {
+            transform: translateY(0);
+        }
+        
+        .mobile-nav ul {
+            display: block;
+            text-align: center;
+        }
+        
+        .mobile-nav li {
+            margin: 0;
+        }
+        
+        .mobile-nav a {
+            display: block;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        .mobile-lang-switch {
+            display: none;
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            background: #f0f7ff;
+            color: var(--primary);
+            font-weight: 700;
+            cursor: pointer;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h2 { font-size: 2.8rem; }
+            .about-content { flex-direction: column; }
+            .about-img { max-width: 100%; width: 100%; margin-bottom: 30px; }
+            .lang-switch { display: none; } /* Hide desktop switch */
+            .mobile-lang-switch { display: block; } /* Show mobile switch */
+        }
+        
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .mobile-menu-btn { display: block; }
+            .mobile-nav { display: block; }
+            .hero h2 { font-size: 2.2rem; }
+            .hero-buttons { flex-direction: column; width: 100%; align-items: center; }
+            .btn { width: 100%; max-width: 300px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGKMKNR6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <h1>Atypical <span>Med</span></h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">La Mia Storia</a></li>
+                    <li><a href="#mission" data-i18n="nav_mission">Missione</a></li>
+                    <li><a href="#editorials" data-i18n="nav_blog">Editoriali</a></li>
+                    <li><a href="#contacts" data-i18n="nav_contact">Contatti</a></li>
+                    <li class="lang-switch" onclick="toggleLanguage()">IT | EN</li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">La Mia Storia</a></li>
+            <li><a href="#mission" data-i18n="nav_mission">Missione</a></li>
+            <li><a href="#editorials" data-i18n="nav_blog">Editoriali</a></li>
+            <li><a href="#contacts" data-i18n="nav_contact">Contatti</a></li>
+            <div class="mobile-lang-switch" onclick="toggleLanguage()">Cambia Lingua / Switch Language (IT/EN)</div>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2 data-i18n="hero_title">Ridisegnare la Medicina attraverso l'Esperienza della Disabilità</h2>
+                <p data-i18n="hero_desc">Un viaggio nella medicina visto da una prospettiva unica: quella di una studentessa di medicina con disabilità che sogna un sistema sanitario più inclusivo e accessibile.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn" data-i18n="hero_btn_1">Scopri la Mia Storia</a>
+                    <a href="#editorials" class="btn btn-outline" data-i18n="hero_btn_2">Esplora i Contenuti</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">    
+            <div class="section-title">
+                <h2 data-i18n="about_title">La Persona Dietro il Progetto</h2>
+                <p data-i18n="about_subtitle">Conoscimi meglio e scopri cosa mi ha spinto a creare Atypical Med</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" alt="Medical Student">
+                </div>
+                <div class="about-text">
+                    <h3 data-i18n="about_hello">Ciao, sono una studentessa di Medicina con una missione</h3>
+                    <p data-i18n="about_p1">Frequentando Medicina, ho capito quanto il mondo sanitario sia ancora distante dal comprendere davvero cosa significhi vivere con una disabilità.</p>
+                    <p data-i18n="about_p2">Troppo spesso, questa viene osservata solo attraverso una lente clinica, perdendo di vista la dimensione umana, sociale e quotidiana dell’esperienza vissuta.</p>
+                    <p data-i18n="about_p3">Atypical Med nasce proprio da questa consapevoleza: è un progetto che vuole portare alla luce le voci, le sfide e le storie delle persone con disabilità nel mondo medico.</p>
+                    <p data-i18n="about_p4">L’obiettivo è chiaro: abbattere barriere, combattere lo stigma e promuovere una medicina più inclusiva, accessibile e consapevole.</p> 
+                    <p class="signature" data-i18n="about_quote">"La diversità è un fatto, l'inclusione è una scelta"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission" id="mission">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="mission_title">La Nostra Missione</h2>
+                <p data-i18n="mission_subtitle">I pilastri che guidano il progetto Atypical Med</p>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3 data-i18n="card_1_title">Inclusione Medica</h3>
+                    <p data-i18n="card_1_desc">Promuovere una cultura medica che riconosca e valorizzi le diverse abilità, sia tra i professionisti che tra i pazienti.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-universal-access"></i></div>
+                    <h3 data-i18n="card_2_title">Accessibilità</h3>
+                    <p data-i18n="card_2_desc">Lottare per un accesso equo alle strutture sanitarie, eliminando barriere fisiche e sensoriali che limitano le cure.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-eye"></i></div>
+                    <h3 data-i18n="card_3_title">Prospettiva Diretta</h3>
+                    <p data-i18n="card_3_desc">Portare in primo piano le esperienze vissute, perché nessuno meglio di chi vive la disabilità può guidare il cambiamento.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-book-open"></i></div>
+                    <h3 data-i18n="card_4_title">Nuova Narrazione</h3>
+                    <p data-i18n="card_4_desc">Superare gli stereotipi che vedono la disabilità solo come limite, mostrandone invece la ricchezza di prospettiva.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-globe-europe"></i></div>
+                    <h3 data-i18n="card_5_title">Esperienze Globali</h3>
+                    <p data-i18n="card_5_desc">Condividere lezioni apprese durante esperienze internazionali, come l'Erasmus, per migliorare il sistema italiano.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 data-i18n="card_6_title">Vita da Studente</h3>
+                    <p data-i18n="card_6_desc">Raccontare le sfide quotidiane di uno studente di medicina con disabilità per ispirare cambiamenti concreti nella formazione.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="editorials" id="editorials">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="blog_title">Editoriali & Curiosità</h2>
+                <p data-i18n="blog_subtitle">Esplorazioni sulla disabilità nel campo medico</p>
+            </div>
+            <div class="editorial-cards">
+                <div class="editorial-card">
+                    <div class="editorial-img" style="background-image: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=873&q=80');"></div>
+                    <div class="editorial-content">
+                        <h3 data-i18n="art_1_title">L'Accessibilità nei Reparti Ospedalieri</h3>
+                        <p data-i18n="art_1_desc">Un'analisi delle barriere architettoniche più comuni e soluzioni pratiche per superarle.</p>
+                        <a href="https://medium.com/" class="editorial-link" target="_blank"><span data-i18n="read_more">Leggi l'articolo</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="editorial-card">
+                    <div class="editorial-img" style="background-image: url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80');"></div>
+                    <div class="editorial-content">
+                        <h3 data-i18n="art_2_title">Disabilità e Formazione Medica</h3>
+                        <p data-i18n="art_2_desc">Come integrare la prospettiva della disabilità nell'insegnamento della medicina.</p>
+                        <a href="https://medium.com/" class="editorial-link" target="_blank"><span data-i18n="read_more">Leggi l'articolo</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="editorial-card">
+                    <div class="editorial-img" style="background-image: url('https://images.unsplash.com/photo-1599045118108-bf9954418b76?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80');"></div>
+                    <div class="editorial-content">
+                        <h3 data-i18n="art_3_title">Erasmus con Disabilità</h3>
+                        <p data-i18n="art_3_desc">La mia esperienza di studio a Lubiana: sfide e opportunità di un percorso internazionale.</p>
+                        <a href="https://medium.com/" class="editorial-link" target="_blank"><span data-i18n="read_more">Leggi l'articolo</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="https://medium.com/" class="btn" target="_blank" data-i18n="view_all">Esplora Tutti gli Editoriali</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Atypical Med</h3>
+                    <p data-i18n="footer_about">Un progetto nato per portare una prospettiva diversa nel mondo della medicina, attraverso gli occhi di una studentessa con disabilità.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/atypicalmed_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@atypicalmed?lang=it-IT" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer_links">Link Utili</h3>
+                    <p><a href="#about" style="color: white; text-decoration: none;" data-i18n="nav_about">La Mia Storia</a></p>
+                    <p><a href="#mission" style="color: white; text-decoration: none;" data-i18n="nav_mission">Missione</a></p>
+                    <p><a href="#editorials" style="color: white; text-decoration: none;" data-i18n="nav_blog">Editoriali</a></p>
+                    <p><a href="#contacts" style="color: white; text-decoration: none;" data-i18n="nav_contact">Contatti</a></p>
+                </div>
+                <div class="footer-col">
+                    <h3 data-i18n="footer_contact">Contatti</h3>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> 
+                       <a href="mailto:atypicalmed12@gmail.com" class="email-link">atypicalmed12@gmail.com</a>
+                    </p>
+                    <p data-i18n="footer_contact_desc">Scrivimi per collaborazioni, domande o per condividere la tua esperienza</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Atypical Med. <span data-i18n="copyright">Tutti i diritti riservati.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- TRANSLATION DATA ---
+        const translations = {
+            it: {
+                nav_home: "Home",
+                nav_about: "La Mia Storia",
+                nav_mission: "Missione",
+                nav_blog: "Editoriali",
+                nav_contact: "Contatti",
+                hero_title: "Ridisegnare la Medicina attraverso l'Esperienza della Disabilità",
+                hero_desc: "Un viaggio nella medicina visto da una prospettiva unica: quella di una studentessa di medicina con disabilità che sogna un sistema sanitario più inclusivo e accessibile.",
+                hero_btn_1: "Scopri la Mia Storia",
+                hero_btn_2: "Esplora i Contenuti",
+                about_title: "La Persona Dietro il Progetto",
+                about_subtitle: "Conoscimi meglio e scopri cosa mi ha spinto a creare Atypical Med",
+                about_hello: "Ciao, sono una studentessa di Medicina con una missione",
+                about_p1: "Frequentando Medicina, ho capito quanto il mondo sanitario sia ancora distante dal comprendere davvero cosa significhi vivere con una disabilità.",
+                about_p2: "Troppo spesso, questa viene osservata solo attraverso una lente clinica, perdendo di vista la dimensione umana, sociale e quotidiana dell’esperienza vissuta.",
+                about_p3: "Atypical Med nasce proprio da questa consapevoleza: è un progetto che vuole portare alla luce le voci, le sfide e le storie delle persone con disabilità nel mondo medico.",
+                about_p4: "L’obiettivo è chiaro: abbattere barriere, combattere lo stigma e promuovere una medicina più inclusiva, accessibile e consapevole.",
+                about_quote: "\"La diversità è un fatto, l'inclusione è una scelta\"",
+                mission_title: "La Nostra Missione",
+                mission_subtitle: "I pilastri che guidano il progetto Atypical Med",
+                card_1_title: "Inclusione Medica",
+                card_1_desc: "Promuovere una cultura medica che riconosca e valorizzi le diverse abilità, sia tra i professionisti che tra i pazienti.",
+                card_2_title: "Accessibilità",
+                card_2_desc: "Lottare per un accesso equo alle strutture sanitarie, eliminando barriere fisiche e sensoriali che limitano le cure.",
+                card_3_title: "Prospettiva Diretta",
+                card_3_desc: "Portare in primo piano le esperienze vissute, perché nessuno meglio di chi vive la disabilità può guidare il cambiamento.",
+                card_4_title: "Nuova Narrazione",
+                card_4_desc: "Superare gli stereotipi che vedono la disabilità solo come limite, mostrandone invece la ricchezza di prospettiva.",
+                card_5_title: "Esperienze Globali",
+                card_5_desc: "Condividere lezioni apprese durante esperienze internazionali, come l'Erasmus, per migliorare il sistema italiano.",
+                card_6_title: "Vita da Studente",
+                card_6_desc: "Raccontare le sfide quotidiane di uno studente di medicina con disabilità per ispirare cambiamenti concreti nella formazione.",
+                blog_title: "Editoriali & Curiosità",
+                blog_subtitle: "Esplorazioni sulla disabilità nel campo medico",
+                art_1_title: "L'Accessibilità nei Reparti Ospedalieri",
+                art_1_desc: "Un'analisi delle barriere architettoniche più comuni e soluzioni pratiche per superarle.",
+                art_2_title: "Disabilità e Formazione Medica",
+                art_2_desc: "Come integrare la prospettiva della disabilità nell'insegnamento della medicina.",
+                art_3_title: "Erasmus con Disabilità",
+                art_3_desc: "La mia esperienza di studio a Lubiana: sfide e opportunità di un percorso internazionale.",
+                read_more: "Leggi l'articolo",
+                view_all: "Esplora Tutti gli Editoriali",
+                footer_about: "Un progetto nato per portare una prospettiva diversa nel mondo della medicina, attraverso gli occhi di una studentessa con disabilità.",
+                footer_links: "Link Utili",
+                footer_contact: "Contatti",
+                footer_contact_desc: "Scrivimi per collaborazioni, domande o per condividere la tua esperienza",
+                copyright: "Tutti i diritti riservati."
+            },
+            en: {
+                nav_home: "Home",
+                nav_about: "My Story",
+                nav_mission: "Mission",
+                nav_blog: "Editorials",
+                nav_contact: "Contact",
+                hero_title: "Redesigning Medicine through the Lens of Disability",
+                hero_desc: "A journey into medicine seen from a unique perspective: that of a medical student with a disability dreaming of a more inclusive and accessible healthcare system.",
+                hero_btn_1: "Discover My Story",
+                hero_btn_2: "Explore Content",
+                about_title: "The Person Behind the Project",
+                about_subtitle: "Get to know me better and discover what drove me to create Atypical Med",
+                about_hello: "Hi, I am a medical student with a mission",
+                about_p1: "While attending medical school, I realized how far the healthcare world still is from truly understanding what it means to live with a disability.",
+                about_p2: "Too often, it is observed only through a clinical lens, losing sight of the human, social, and daily dimensions of the lived experience.",
+                about_p3: "Atypical Med was born from this awareness: a project to highlight the voices, challenges, and stories of people with disabilities in the medical world.",
+                about_p4: "The goal is clear: to break down barriers, fight stigma, and promote a more inclusive, accessible, and conscious medicine.",
+                about_quote: "\"Diversity is a fact, inclusion is a choice\"",
+                mission_title: "Our Mission",
+                mission_subtitle: "The pillars guiding the Atypical Med project",
+                card_1_title: "Medical Inclusion",
+                card_1_desc: "Promoting a medical culture that recognizes and values diverse abilities among both professionals and patients.",
+                card_2_title: "Accessibility",
+                card_2_desc: "Fighting for equal access to healthcare facilities by eliminating physical and sensory barriers that limit care.",
+                card_3_title: "Direct Perspective",
+                card_3_desc: "Bringing lived experiences to the forefront, because no one can guide change better than those living with disability.",
+                card_4_title: "Changing the Narrative",
+                card_4_desc: "Overcoming stereotypes that see disability only as a limit, showing instead its richness of perspective.",
+                card_5_title: "Global Experiences",
+                card_5_desc: "Sharing lessons learned during international experiences, like Erasmus, to improve the Italian system.",
+                card_6_title: "Student Life",
+                card_6_desc: "Recounting the daily challenges of a medical student with a disability to inspire concrete changes in training.",
+                blog_title: "Editorials & Curiosities",
+                blog_subtitle: "Explorations on disability in the medical field",
+                art_1_title: "Accessibility in Hospital Wards",
+                art_1_desc: "An analysis of common architectural barriers and practical solutions to overcome them.",
+                art_2_title: "Disability and Medical Training",
+                art_2_desc: "How to integrate the perspective of disability into medical teaching.",
+                art_3_title: "Erasmus with a Disability",
+                art_3_desc: "My study experience in Ljubljana: challenges and opportunities of an international path.",
+                read_more: "Read article",
+                view_all: "Explore All Editorials",
+                footer_about: "A project born to bring a different perspective to the world of medicine, through the eyes of a student with a disability.",
+                footer_links: "Useful Links",
+                footer_contact: "Contact",
+                footer_contact_desc: "Write to me for collaborations, questions, or to share your experience",
+                copyright: "All rights reserved."
+            }
+        };
+
+        // --- LANGUAGE LOGIC ---
+        let currentLang = localStorage.getItem('atypical_lang') || 'it';
+
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    element.textContent = translations[currentLang][key];
+                }
+            });
+            document.documentElement.lang = currentLang;
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'it' ? 'en' : 'it';
+            localStorage.setItem('atypical_lang', currentLang);
+            updateContent();
+        }
+
+        // Initialize language on load
+        document.addEventListener('DOMContentLoaded', updateContent);
+
+        // --- UI LOGIC ---
+        
+        // Mobile Menu
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileNav = document.getElementById('mobileNav');
+        const icon = menuBtn.querySelector('i');
+
+        menuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            if (mobileNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Smooth scroll adjustment
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#' && document.querySelector(targetId)) {
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
