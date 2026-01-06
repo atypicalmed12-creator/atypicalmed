@@ -1,0 +1,168 @@
+// _sass/_landing.scss
+
+// Wrapper generale della Landing
+.landing-wrapper {
+  width: 100%;
+  overflow-x: hidden; // Previene scroll orizzontali indesiderati
+}
+
+// 1. HERO SECTION (Chi sono + Foto)
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  gap: 50px;
+
+  // Comportamento su Mobile (Colonna)
+  @media (max-width: 768px) {
+    flex-direction: column-reverse; // L'immagine va sopra, il testo sotto
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    flex: 1;
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: $color-text;
+      
+      @media (max-width: 768px) { font-size: 2.5rem; }
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: $color-text-light; // Il marrone desaturato
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      @media (max-width: 768px) { justify-content: center; }
+    }
+  }
+
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      width: 450px;
+      height: 550px;
+      object-fit: cover; // Ritaglia l'immagine se le proporzioni non coincidono
+      border-radius: 20px; // Angoli smussati moderni
+      box-shadow: 20px 20px 0px rgba($color-accent, 0.3); // L'ombra "solida" tipica del tema Astra
+    }
+  }
+}
+
+// 2. FEATURES SECTION (Cosa racconto)
+.features-section {
+  padding: 80px 20px;
+
+  .features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    p.section-desc {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 50px auto;
+      color: $color-text-light;
+    }
+
+    .features-grid {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .feature-card {
+        flex: 1;
+        min-width: 300px;
+        max-width: 350px;
+        background: $color-bg-site; // Torna al crema all'interno del box bianco
+        padding: 40px 30px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px); // Leggero movimento al passaggio mouse
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 15px;
+          color: $color-text;
+        }
+
+        p {
+          font-size: 0.95rem;
+          color: $color-text-light;
+          margin-bottom: 20px;
+        }
+        
+        // Icona o numero decorativo
+        .icon {
+          font-size: 2rem;
+          color: $color-accent;
+          margin-bottom: 20px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 3. QUOTE SECTION (Citazione)
+.quote-section {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  blockquote {
+    border: none; // Rimuove la barra laterale di default
+    padding: 0;
+    font-size: 2rem;
+    font-style: italic;
+    color: $color-text;
+    line-height: 1.4;
+    
+    &:before {
+      content: "“";
+      display: block;
+      font-size: 4rem;
+      color: $color-accent;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+  }
+
+  cite {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: normal;
+    color: $color-text-light;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}

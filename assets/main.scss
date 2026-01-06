@@ -1,0 +1,16 @@
+---
+---
+
+// 1. Importiamo i Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// 2. Le TUE variabili (devono stare qui per sovrascrivere quelle di Minima se necessario)
+@import "variables";
+
+// 3. Il tema base (Minima)
+@import "minima";
+
+// 4. I tuoi layout personalizzati
+@import "base";
+@import "landing";
+@import "blog";
