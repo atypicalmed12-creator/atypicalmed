@@ -1,0 +1,14 @@
+services:
+  site:
+    image: jekyll/jekyll:latest
+    platform: linux/amd64  # <--- AGGIUNTA: Forza l'architettura Intel per evitare errori strani su Mac M1/M2
+    # Modificato: Aggiunto 'bundle exec' all'inizio
+    command: bundle exec jekyll serve --livereload --force_polling --host 0.0.0.0
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll
+    environment:
+      - JEKYLL_ENV=development
+      - BUNDLE_PATH=/srv/jekyll/vendor/bundle

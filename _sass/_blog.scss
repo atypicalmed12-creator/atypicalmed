@@ -1,0 +1,67 @@
+// Wrapper per la home del blog (elenco articoli)
+.blog-index-wrapper {
+  max-width: $content-width;
+  margin: 60px auto;
+  padding: 0 20px;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    
+    // Una piccola linea decorativa sotto il titolo
+    &:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: $color-accent;
+      margin: 20px auto 0;
+    }
+  }
+
+  // Lista articoli
+  .post-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba($color-accent, 0.3);
+      
+      h3 { font-size: 1.8rem; margin-bottom: 10px; }
+      p { color: $color-text-light; }
+    }
+  }
+}
+
+// Layout del singolo Articolo (fornito da Minima, ma lo sovrascriviamo qui)
+.post-content {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: $color-bg-content; // Sfondo bianco "carta"
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); // Leggera ombra elegante
+  font-size: 1.1rem; // Testo leggermente più grande per leggere meglio
+  border-radius: 20px;
+  
+  // Immagini nel post
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  h2, h3 { margin-top: 40px; }
+}
+
+.post-header {
+  text-align: center;
+  margin-bottom: 40px;
+  
+  h1 { font-size: 3rem; }
+  .post-meta { color: $color-text-light; font-style: italic; }
+}

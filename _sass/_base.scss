@@ -1,0 +1,49 @@
+body {
+  font-family: $base-font-family;
+  color: $color-text;
+  background-color: $color-bg-site;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: 700;
+  color: $color-text;
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+  
+  &:hover {
+    color: darken($color-accent, 20%);
+  }
+}
+
+// Stile base per i bottoni (usato sia in home che blog)
+.btn {
+  display: inline-block;
+  background-color: $color-accent;
+  color: #fff;
+  padding: 15px 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  
+  &:hover {
+    background-color: darken($color-accent, 10%);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.site-nav {
+  z-index: 900;
+}

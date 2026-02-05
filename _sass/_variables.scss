@@ -1,0 +1,16 @@
+// Font (Lo importeremo nel file style.scss principale)
+$base-font-family: 'Montserrat', sans-serif;
+$heading-font-family: 'Montserrat', sans-serif;
+
+// Palette Colori (Estratti dal tuo esempio)
+$color-bg-site:       #fff0e9; // Sfondo generale (Crema)
+$color-bg-content:    #ffffff; // Sfondo per gli articoli (Bianco per leggibilità)
+$color-accent:        #ffb4a2; // Salmone (Bottoni, dettagli)
+$color-text:          #3a3a3a; // Grigio scuro
+$color-text-light:    #86655d; // Marrone desaturato (per sottotitoli)
+$color-border:        #eaeaea;
+
+// Dimensioni
+$spacing-unit:        30px;
+$content-width:       800px; // Larghezza ottima per la lettura (Blog)
+$landing-width:       1200px; // Larghezza ampia per la Home
