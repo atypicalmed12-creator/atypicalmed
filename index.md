@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: landing
 title: Home
 permalink: /
 ---
@@ -7,22 +7,24 @@ permalink: /
 <div class="landing-wrapper">
 
   <div class="hero-section">
-    <div class="hero-text">
-      <p class="subtitle">MEDICINA • DISABILITÀ • VIAGGI</p>
-      <h1>La medicina bla bla</h1>
-      <p style="font-size: 1.1rem; margin-bottom: 30px;">
-        Ciao, sono Sifahu. Studentessa di medicina al 5° anno, sognatrice in camice bianco e viaggiatrice su quattro ruote. 
-        Racconto la mia vita tra corsie d'ospedale, barriere architettoniche abbattute e la mia indimenticabile esperienza Erasmus.
-      </p>
-      
-      <div class="btn-group">
-        <a href="/about/" class="btn">La mia Storia</a>
-        <a href="/blog/" class="btn" style="background-color: transparent; border: 2px solid #ffb4a2; color: #3a3a3a;">Leggi il Blog</a>
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="subtitle">Medicina • Disabilità • Viaggi</span>
+        <h1>La medicina<br>senza barriere.</h1>
+        <p>
+          Sono Sifahu, studentessa di medicina al 5° anno. Sogno un sistema sanitario più inclusivo e accessibile.<br>
+          Racconto la vita tra corsie d'ospedale e confini superati.
+        </p>
+        
+        <div class="btn-group">
+          <a href="/about/" class="btn">La mia Storia</a>
+          <a href="/blog/" class="btn" style="background-color: transparent; border: 2px solid #3a3a3a; color: #3a3a3a;">Leggi il Blog</a>
+        </div>
       </div>
-    </div>
 
-    <div class="hero-image">
-      <img src="/assets/images/profile.jpg" alt="Studentessa di medicina">
+      <div class="hero-image">
+        <img src="/assets/images/profile.jpg" alt="Studentessa di medicina">
+      </div>
     </div>
   </div>
 
@@ -37,30 +39,47 @@ permalink: /
           <span class="icon">🩺</span>
           <h3>Vita da Med Student</h3>
           <p>Esami, tirocini e la vita in reparto. Come affronto lo studio della medicina e il rapporto con i pazienti.</p>
-          <a href="/blog/" style="color: #86655d; font-weight: bold; text-decoration: underline;">Leggi gli articoli</a>
+          <a href="/blog/">Leggi gli articoli</a>
         </div>
 
         <div class="feature-card">
           <span class="icon">♿️</span>
           <h3>Disabilità & Diritti</h3>
-          <p>Essere un futuro medico in carrozzina. Sfido gli stereotipi e racconto l'accessibilità (o la sua mancanza) negli ospedali.</p>
-          <a href="/blog/" style="color: #86655d; font-weight: bold; text-decoration: underline;">Scopri di più</a>
+          <p>Essere un futuro medico in carrozzina. Sfido gli stereotipi e racconto l'accessibilità negli ospedali.</p>
+          <a href="/blog/">Scopri di più</a>
         </div>
 
         <div class="feature-card">
           <span class="icon">🌍</span>
           <h3>Erasmus & Viaggi</h3>
           <p>La mia esperienza all'estero. Organizzare viaggi accessibili e studiare in un altro paese, nonostante tutto.</p>
-          <a href="/blog/" style="color: #86655d; font-weight: bold; text-decoration: underline;">I miei viaggi</a>
+          <a href="/blog/">I miei viaggi</a>
         </div>
 
       </div>
     </div>
   </div>
 
+  <div class="about-preview-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="/assets/images/profile.jpg" alt="Sifahu Azeez">
+      </div>
+      <div class="about-content">
+        <h2>La persona dietro il progetto</h2>
+        <p>
+          Non sono solo una studentessa di medicina. Sono una persona che ha imparato a trasformare gli ostacoli in prospettive. 
+          Dalla gestione della disabilità in corsia alle avventure in Erasmus, il mio obiettivo è dimostrare che la medicina 
+          può essere praticata (e vissuta) in mille modi diversi.
+        </p>
+        <a href="/about/" class="btn">Leggi la mia storia completa</a>
+      </div>
+    </div>
+  </div>
+
   <div class="quote-section">
     <blockquote>
-      "La diversità è un fatto, l'inclusione è una scelta."
+      “La diversità è un fatto,<br>l'inclusione è una scelta.”
     </blockquote>
     <cite>— Sifahu Azeez</cite>
   </div>

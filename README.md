@@ -183,6 +183,9 @@ Di seguito una breve guida sulla funzione dei vari file e cartelle contenuti nel
 │
 ⚠️ Area Tecnica: NON TOCCARE!
 │
+├── _layouts/              ⚠️ GRAFICA personalizzata (non toccare)
+│   ├── _landing.html      Grafica personalizzata landing page
+│
 ├── _config.yml            ⚙️ IMPOSTAZIONI GENERALI. Titolo del sito, autore, ecc.
 │                          Se modifichi questo, devi riavviare Docker
 ├── .gitignore

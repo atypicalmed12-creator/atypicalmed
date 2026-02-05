@@ -21,13 +21,12 @@
 title: Atypical Med
 email: contact@atypicalmed.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Un progetto nato per portare una prospettiva diversa nel mondo della medicina, attraverso gli occhi di una studentessa con disabilità.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://atypicalmed.com/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: atypicalmed12-creator
-github_username:  atypicalmed12-creator
+instagram_username: atypicalmed_
+tiktok_username: atypicalmed
+email: atypicalmed12@gmail.com
 
 # Build settings
 theme: minima

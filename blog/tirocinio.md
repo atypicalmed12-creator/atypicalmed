@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Erasmus
-permalink: /erasmus/
+title: Tirocinio
+permalink: /tirocinio/
 ---
 
 <div class="blog-index-wrapper">
