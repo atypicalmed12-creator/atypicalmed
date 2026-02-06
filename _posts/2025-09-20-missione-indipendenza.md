@@ -6,7 +6,7 @@ categories: [erasmus]
 author: Sifahu Azeez
 ---
 
-![associazione degli studenti diabili di lubiana](/assets/images/associazione-degli-studenti-diabili-di-lubiana.jpeg)
+![associazione degli studenti diabili di lubiana](/assets/images/associazione-degli-studenti-diabili-di-lubiana.jpg)
 
 Il secondo giorno del mio sopralluogo, il 28 agosto, è stato dedicato a ciò che rende *davvero* possibile un Erasmus: l'organizzazione pratica. Verso metà mattina mi sono diretta nel quartiere universitario di **Bežigrad**. È il cuore pulsante delle facoltà umanistiche (Economia, Scienze Sociali) ma, soprattutto, è dove ha sede l’**Associazione degli Studenti Disabili di Lubiana**.
 
