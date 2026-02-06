@@ -72,7 +72,10 @@ permalink: /blog/
 
         <div style="margin-bottom: 10px; font-size: 0.85rem; color: #86655d;">
            {% for cat in post.categories %}
-             <span style="background: #eee; padding: 2px 8px; border-radius: 4px; margin-right: 5px;">#{{ cat }}</span>
+             <a href="/{{ cat | downcase }}/" 
+                style="background: #eee; padding: 2px 8px; border-radius: 4px; margin-right: 5px; text-decoration: none; color: #555; display: inline-block;">
+                #{{ cat }}
+             </a>
            {% endfor %}
         </div>
 
