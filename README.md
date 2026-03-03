@@ -139,6 +139,14 @@ Puoi usare il grassetto, i link e le liste. Nella sezione successiva ci sarà un
 ![Descrizione della foto](/assets/images/foto-mare.jpg)
 ```
 
+### 4. Inserire video 🎬
+
+1. Metti il tuo video (es. `video-lubiana.MOV`) nella cartella `assets/videos/` del progetto.
+2. Nel punto dell'articolo dove vuoi che appaia, scrivi:
+```markdown
+{% include video.html path="/assets/videos/mio-lubiana.MOV" %}
+```
+
 ---
 
 ## 💾 Salvare e Pubblicare (GitHub Desktop)

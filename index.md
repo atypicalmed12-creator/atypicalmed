@@ -60,10 +60,14 @@ permalink: /
     </div>
   </div>
 
-  <div class="about-preview-section">
+<div class="about-preview-section">
     <div class="about-container">
       <div class="about-image">
-        <img src="/assets/images/profile.jpg" alt="Sifahu Azeez">
+        <img 
+          src="/assets/images/profile2.jpg" 
+          alt="Sifahu Azeez" 
+          style="object-fit: cover; object-position: top; width: 100%; height: 100%;"
+        >
       </div>
       <div class="about-content">
         <h2>La persona dietro il progetto</h2>
