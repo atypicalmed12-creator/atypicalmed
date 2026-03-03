@@ -61,7 +61,11 @@ Era come se il mio arrivo non fosse stato previsto, nonostante fossimo in contat
 
 Nel pomeriggio, dopo aver salutato mio padre con un lungo abbraccio e la mia assistente — *che avrei rivisto il giorno dopo* — ho deciso di parlare un po’ con la mia coinquilina.
 
-La prima cosa che ho notato, già da agosto con una rapida occhiata alla sua stanza, era una sorta di ossessione per il nero. Vestiti neri, mobili neri, persino i piatti erano neri. Le ho chiesto scherzosamente se fosse il suo colore preferito. Mi ha risposto di no. 
+La prima cosa che ho notato, già da agosto con una rapida occhiata alla sua stanza, era una sorta di ossessione per il nero. 
+
+Vestiti neri, mobili neri, persino i piatti erano neri. 
+
+Le ho chiesto scherzosamente se fosse il suo colore preferito. Mi ha risposto di no. 
 
 Questa risposta mi ha lasciata un po’ spiazzata, ma non ho approfondito.
 
