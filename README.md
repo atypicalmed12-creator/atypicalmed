@@ -135,17 +135,21 @@ Puoi usare il grassetto, i link e le liste. Nella sezione successiva ci sarà un
 
 1. Metti la tua foto (es. `foto-mare.jpg`) nella cartella `assets/images/` del progetto.
 2. Nel punto dell'articolo dove vuoi che appaia, scrivi:
-```markdown
-![Descrizione della foto](/assets/images/foto-mare.jpg)
-```
+    ```markdown
+    ![Descrizione della foto](/assets/images/foto-mare.jpg)
+    ```
 
 ### 4. Inserire video 🎬
 
 1. Metti il tuo video (es. `video-lubiana.MOV`) nella cartella `assets/videos/` del progetto.
 2. Nel punto dell'articolo dove vuoi che appaia, scrivi:
-```markdown
-{% include video.html path="/assets/videos/mio-lubiana.MOV" %}
-```
+    ```markdown
+    {% include video.html path="/assets/videos/video-lubiana.MOV" %}
+    ```
+    Se il video è verticale, potrebbe risultare troppo grande nella pagina. Per regolare l'altezza è sufficiente aggiungere il parametro `max_width` con un valore adatto. Ad esempio
+    ```markdown
+    {% include video.html path="/assets/videos/video-lubiana.MOV" max_width="350px" %}
+    ```
 
 ---
 

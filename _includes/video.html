@@ -1,7 +1,8 @@
-<div class="video-wrapper">
-    <video width="100%" controls>
-      <source src="{{ include.path | relative_url }}" type="video/mp4">
-      Il tuo browser non supporta il tag video.
-    </video>
-  </div>
-  
+<div class="video-container" style="text-align: center; margin: 20px 0;">
+  <video 
+    controls 
+    style="max-width: {{ include.max_width | default: '100%' }}; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <source src="{{ include.path | relative_url }}" type="video/mp4">
+    Il tuo browser non supporta il tag video.
+  </video>
+</div>

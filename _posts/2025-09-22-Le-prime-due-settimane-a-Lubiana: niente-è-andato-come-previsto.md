@@ -50,7 +50,7 @@ Passeggiando, ci siamo imbattute in una mostra fotografica a cielo aperto, accom
 
 Abbiamo poi raggiunto la collina dove si trova il museo di grafica contemporanea. 
 
-{% include video.html path="/assets/videos/mostre.MOV"%} ⁠
+{% include video.html path="/assets/videos/mostre.MOV" max_width="350px" %}
 
 Io, però, non sono riuscita ad accedervi a causa dell’inaccessibilità della struttura. La mia amica si è indignata. Io no.
 
