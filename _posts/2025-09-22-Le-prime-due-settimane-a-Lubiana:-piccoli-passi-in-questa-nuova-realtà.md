@@ -34,7 +34,7 @@ E con la routine, è arrivata anche un po’ di sicurezza.
 
 Ho iniziato a parlare con i miei colleghi: molti italiani, ma anche studenti provenienti da Germania, Lettonia e Polonia. 
 
-Eravamo tutti nella stessa situazione — spaesati, curiosi, un po’ disorientati — e questo ci avvicinava più di quanto pensassi.
+Eravamo tutti nella stessa situazione — *spaesati, curiosi, un po’ disorientati* — e questo ci avvicinava più di quanto pensassi.
 
 Fuori dall’università, le cose hanno iniziato a prendere una piega inaspettata.
 
