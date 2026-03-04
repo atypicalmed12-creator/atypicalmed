@@ -49,6 +49,7 @@ Un dettaglio burocratico, sì, ma essenziale per poter restare.
 Dopo aver compilato tutto e ottenuto il numero del portinaio, ho finalmente ricevuto le chiavi della mia stanza: piccola, essenziale, con bagno e cucina condivisi con la mia coinquilina.
 
 Poco dopo ho incontrato la mia prima assistente, Masa. 
+
 Sulla trentina, sorridente, piena di energia. Mi ha trasmesso subito un senso di leggerezza e si è messa immediatamente ad aiutare me e mio padre con valigie e scatoloni.
 
 Nel giro di due ore la stanza aveva già preso forma. Non era ancora tutto sistemato, ma per il primo giorno era abbastanza.
@@ -57,23 +58,32 @@ La cucina, invece, era un problema.
 
 Era completamente occupata dalle cose della mia coinquilina: ho trovato a malapena spazio per il mio cibo, e anche il frigorifero era quasi pieno. 
 
-Era come se il mio arrivo non fosse stato previsto, nonostante fossimo in contatto da settimane. Ho scelto comunque di non dare troppo peso alla cosa: era solo l’inizio e non volevo partire con il piede sbagliato.
+Era come se il mio arrivo non fosse stato previsto, nonostante fossimo in contatto da settimane. 
+
+Ho scelto comunque di non dare troppo peso alla cosa: era solo l’inizio e non volevo partire con il piede sbagliato.
 
 Nel pomeriggio, dopo aver salutato mio padre con un lungo abbraccio e la mia assistente — *che avrei rivisto il giorno dopo* — ho deciso di parlare un po’ con la mia coinquilina.
 
-La prima cosa che ho notato, già da agosto con una rapida occhiata alla sua stanza, era una sorta di ossessione per il nero. 
+La prima cosa che ho notato, già da agosto con una rapida occhiata alla sua stanza, era una sorta di ossessione per il nero. ![stanza](/assets/images/stanza.png)
 
 Vestiti neri, mobili neri, persino i piatti erano neri. 
+![cucina](/assets/images/cucina.png) 
 
-Le ho chiesto scherzosamente se fosse il suo colore preferito. Mi ha risposto di no. 
+Le ho chiesto scherzosamente se fosse il suo colore preferito. 
+
+Mi ha risposto di no. 
 
 Questa risposta mi ha lasciata un po’ spiazzata, ma non ho approfondito.
 
-Ho notato anche che faceva fatica ad articolare le parole e a muoversi con la carrozzina: le dita delle mani erano contratte e aveva bisogno di aiuto costante. Infatti era spesso accompagnata da uno dei suoi assistenti, un ragazzo che sembrava ormai una presenza stabile nella sua quotidianità.
+Ho notato anche che faceva fatica ad articolare le parole e a muoversi con la carrozzina: le dita delle mani erano contratte e aveva bisogno di aiuto costante. 
+
+Infatti era spesso accompagnata da uno dei suoi assistenti, un ragazzo che sembrava ormai una presenza stabile nella sua quotidianità.
 
 Mentre parlavamo, ho sentito un miagolio provenire dalla mia stanza. 
 
-Per un attimo sono rimasta sorpresa, poi ho capito: era il suo gatto. L’ho fatto entrare così che potesse prenderlo in braccio.
+Per un attimo sono rimasta sorpresa, poi ho capito: era il suo gatto. 
+![gatto](/assets/images/gatto.JPG)
+L’ho fatto entrare così che potesse prenderlo in braccio.
 
 La giornata è scivolata via velocemente. Nel tardo pomeriggio sono uscita a fare un giro nei dintorni del dormitorio. 
 

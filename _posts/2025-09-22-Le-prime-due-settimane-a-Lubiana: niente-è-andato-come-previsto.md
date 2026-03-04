@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Le prime due settimane a Lubiana: niente è andato come previsto"
+title:  "Le prime due settimane a Lubiana: piccoli passi in questa nuova realtà"
 date:   2025-09-22 12:00:00 +0200
 categories: [erasmus]
 author: Sifahu Azeez
@@ -38,7 +38,9 @@ Eravamo tutti nella stessa situazione — spaesati, curiosi, un po’ disorienta
 
 Fuori dall’università, le cose hanno iniziato a prendere una piega inaspettata.
 
-Tutto è iniziato in modo quasi comico: la mia assistente ha origliato una conversazione tra alcune ragazze. Una di loro, Mary, stava cercando un’esperienza Erasmus simile alla mia. 
+Tutto è iniziato in modo quasi comico: la mia assistente ha origliato una conversazione tra alcune ragazze. 
+
+Una di loro, Mary, stava cercando un’esperienza Erasmus simile alla mia. 
 
 Così, senza pensarci troppo, le ha invitate a mettersi in contatto con me.
 
@@ -60,7 +62,8 @@ E in quel momento mi sono resa conto di quanto certe cose, per me, siano ormai n
 
 Durante il weekend della prima settimana sono stata invitata a cena a casa di Mary. 
 
-Ognuno portava qualcosa del proprio paese. 
+Ognuno portava qualcosa del proprio paese.  
+![banchetto](/assets/images/banchetto.jpeg)
 
 Intorno a quel tavolo c’erano storie diverse: Belgio, Bielorussia, Paesi Bassi, Italia.
 
