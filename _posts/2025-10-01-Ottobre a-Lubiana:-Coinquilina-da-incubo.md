@@ -7,7 +7,7 @@ author: Sifahu Azeez
 ---
 Ottobre è arrivato quasi senza che me ne accorgessi.
 
- Erano già passate due settimane dal mio arrivo a Lubiana e, giorno dopo giorno, iniziavo a rendermi conto di quanto la vita in dormitorio stesse diventando difficile  *quasi invivibile* a causa della convivenza con la mia coinquilina.
+Erano già passate due settimane dal mio arrivo a Lubiana e, giorno dopo giorno, iniziavo a rendermi conto di quanto la vita in dormitorio stesse diventando difficile  *quasi invivibile* a causa della convivenza con la mia coinquilina.
 
 All’inizio avevo cercato di essere comprensiva. 
 
@@ -82,7 +82,7 @@ Si lamentava continuamente del lavoro delle mie assistenti e sosteneva che la ma
 Le mie assistenti venivano una o due volte a settimana, ma per lei era insufficiente.
 
 Così ha imposto un calendario delle pulizie, con compiti precisi e una frequenza dettagliata. 
-
+![pulizie](/assets/images/pulizie.jpg)
 Le sue assistenti si occupavano delle prime due settimane del mese, ma pretendeva che i pavimenti venissero puliti e lucidati ogni giorno, anche quando non ce n’era alcun bisogno.
 
 Ho accettato tutte queste regole.
