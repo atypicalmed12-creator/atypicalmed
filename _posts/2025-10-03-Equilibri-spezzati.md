@@ -43,16 +43,15 @@ Non avevo alternative: dovevo prendere la macchina e andare comunque a lezione.
 
 Guidare a Ljubljana non era semplice. Non conoscevo ancora bene le strade, ero poco abituata alla viabilità della città e al traffico intenso che la caratterizzava.
 
- Nonostante tutto, me la cavai abbastanza bene e riuscii ad arrivare in tempo. 
+Nonostante tutto, me la cavai abbastanza bene e riuscii ad arrivare in tempo. 
  
- Inoltre, grazie a un accordo con il portinaio, avevo ottenuto l’accesso a un parcheggio vicino alla sede delle lezioni, un enorme vantaggio considerando che il vero problema di muoversi in auto a Ljubljana è trovare parcheggio.
+Inoltre, grazie a un accordo con il portinaio, avevo ottenuto l’accesso a un parcheggio vicino alla sede delle lezioni, un enorme vantaggio considerando che il vero problema di muoversi in auto a Ljubljana è trovare parcheggio.
 
 Nelle settimane successive mi resi presto conto di quanto fosse costoso. 
 
 Ricordo che un giorno, per trascorrere appena tre ore a studiare nella biblioteca della Facoltà di Giurisprudenza, pagai ben 16 euro di parcheggio. 
 
 Una cifra assurda, soprattutto considerando che avevo lasciato l’auto nel parcheggio di un supermercato.
-
 
 Purtroppo, finché il Triride rimase fuori uso, dovetti confrontarmi quotidianamente con questa realtà. 
 
