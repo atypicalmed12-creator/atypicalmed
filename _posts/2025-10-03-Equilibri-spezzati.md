@@ -6,8 +6,6 @@ categories: [erasmus]
 author: Sifahu Azeez
 ---
 
-# Ottobre a Lubiana: Equilibri spezzati
-
 Avevo appena iniziato il mio Erasmus, ma avevo già dovuto affrontare alcune difficoltà di assestamento per dare inizio alla mia nuova vita universitaria a Ljubljana.
 
 Mi ero organizzata in modo piuttosto semplice: avrei utilizzato il mio Triride per la maggior parte degli spostamenti. 
