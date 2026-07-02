@@ -5,6 +5,7 @@ date:   2025-10-03 12:00:00 +0200
 categories: [erasmus]
 author: Sifahu Azeez
 ---
+
 # Ottobre a Lubiana: Equilibri spezzati
 
 Avevo appena iniziato il mio Erasmus, ma avevo già dovuto affrontare alcune difficoltà di assestamento per dare inizio alla mia nuova vita universitaria a Ljubljana.
