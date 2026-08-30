@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Nouva casa, nuova vita"
+title:  "Nuova casa, nuova vita"
 date:   2025-10-03 12:00:00 +0200
 categories: [erasmus]
 author: Sifahu Azeez
